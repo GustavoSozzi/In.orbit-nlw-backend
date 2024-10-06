@@ -20,13 +20,17 @@ Este repositório contém o backend da aplicação **NLW Pocket 1.0 - In Orbit**
 [![Fastify](https://img.shields.io/badge/Fastify-000000?style=flat&logo=fastify&logoColor=white)](https://www.fastify.io/)
 [![Day.js](https://img.shields.io/badge/Day.js-FFCC00?style=flat&logo=dayjs&logoColor=black)](https://day.js.org/)
 
+## Estrutura de Pastas
+
+
+```bash
 nlw-pocket-js-node-in.orbit/
 ├── .migrations/
 │   └── meta/
 │       ├── 0000_calm_leo.sql             # Migração inicial
 │       ├── 0001_silky_blink.sql          # Segunda migração
 ├── .vscode/
-│   └── settings.json                     # Configurações do VSCode
+│   └── settings.json                     # Configurações específicas do VSCode
 ├── assets/                               # Arquivos estáticos
 ├── src/
 │   ├── db/
@@ -34,22 +38,26 @@ nlw-pocket-js-node-in.orbit/
 │   │   ├── schema.ts                     # Definição do schema do banco de dados
 │   │   ├── seed.ts                       # Script para popular o banco de dados
 │   ├── functions/
-│   │   ├── create-goal.ts                # Função para criação de metas
-│   │   ├── create-goal-completion.ts     # Função para registrar conclusão de metas
-│   │   ├── get-week-summary.ts           # Função para obter resumo semanal
-│   │   ├── get-week-pending-goals.ts     # Função para listar metas pendentes
+│   │   ├── create-goal.ts                # Função para criar metas
+│   │   ├── create-goal-completion.ts     # Função para completar metas
+│   │   ├── get-week-summary.ts           # Função para obter o resumo semanal
+│   │   ├── get-week-pending-goals.ts     # Função para obter metas pendentes
 │   ├── http/
 │   │   ├── routes/
-│   │   │   ├── create-goal.ts            # Rota para criar metas
-│   │   │   ├── create-completion.ts      # Rota para registrar conclusão de metas
-│   │   │   ├── get-pending-goals.ts      # Rota para listar metas pendentes
-│   │   │   ├── get-week-summary.ts       # Rota para obter resumo semanal
+│   │   │   ├── create-goal.ts            # Rota para criação de metas
+│   │   │   ├── create-completion.ts      # Rota para marcar metas como completas
+│   │   │   ├── get-pending-goals.ts      # Rota para metas pendentes
+│   │   │   ├── get-week-summary.ts       # Rota para resumo semanal
 │   ├── env.ts                            # Arquivo de variáveis de ambiente
 ├── package.json                          # Dependências e scripts da aplicação
 ├── .env                                  # Variáveis de ambiente
-├── .gitignore                            # Arquivos ignorados pelo Git
+├── .gitignore                            # Arquivos a serem ignorados pelo Git
 ├── docker-compose.yml                    # Configuração do Docker
 ├── drizzle.config.ts                     # Configuração do Drizzle ORM
 ├── biome.json                            # Configuração do Biome
 ├── tsconfig.json                         # Configuração do TypeScript
-├── tsconfig.build.json                   # Configuração de build do TypeScript
+├── tsconfig.build.json                   # Configuração para build do TypeScript
+```
+
+
+
